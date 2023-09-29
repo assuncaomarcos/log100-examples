@@ -8,7 +8,7 @@ class AnyPerson {
 
 class GrandFather extends AnyPerson {
     public void speak() {
-        System.out.println("C'est le grandpère qui parle");
+        System.out.println("C'est le grand père qui parle");
     }
 }
 

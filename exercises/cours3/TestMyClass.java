@@ -1,4 +1,4 @@
-package cours4;
+package cours3;
 
 class MyClass {
     public void print() {
