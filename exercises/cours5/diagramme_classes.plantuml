@@ -1,0 +1,23 @@
+@startuml
+class Personne {
+    - nom: String
+    - age: int
+    + Personne(nom: String, age: int)
+    + marcher()
+}
+
+class Etudiant {
+    - matricule: String
+    + Etudiant(nom: String, age: int, matricule: String)
+    + etudier()
+}
+
+class Enseignant {
+    - specialite: String
+    + Enseignant(nom: String, age: int, specialite: String)
+    + enseigner()
+}
+
+Personne <|-- Etudiant
+Personne <|-- Enseignant
+@enduml
