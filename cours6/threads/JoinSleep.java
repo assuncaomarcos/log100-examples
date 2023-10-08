@@ -1,4 +1,6 @@
-public class InterruptSleep {
+package threads;
+
+public class JoinSleep {
 
     public static void main(String[] args) {
         // Classe anonyme
@@ -27,11 +29,15 @@ public class InterruptSleep {
         Thread thread = new Thread(sleeping);
         thread.start();
 
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        while (thread.isAlive()) {
+            System.out.println("Attente initiale de quatre secondes...");
+            try {
+                thread.join(4000);
+                System.out.println("On va attendre un peu plus...");
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        thread.interrupt();
     }
 }

@@ -1,3 +1,5 @@
+package threads;
+
 class SynchronizedCounter {
     private int c = 0;
 

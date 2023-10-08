@@ -1,3 +1,4 @@
+package net;
 /*
  * Copyright (c) 1995, 2013, Oracle and/or its affiliates. All rights reserved.
  *
@@ -40,7 +41,7 @@ public class EchoServer {
     public static void main(String[] args) throws IOException {
 
         if (args.length != 1) {
-            System.err.println("Usage : java EchoServer <numéro de port>");
+            System.err.println("Usage : java net.EchoServer <numéro de port>");
             System.exit(1);
         }
 

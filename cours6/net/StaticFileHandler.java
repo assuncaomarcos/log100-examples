@@ -1,4 +1,4 @@
-/*
+package net;/*
 Code adapté de :
 https://stackoverflow.com/questions/15902662/how-to-serve-static-content-using-suns-simple-httpserver
  */

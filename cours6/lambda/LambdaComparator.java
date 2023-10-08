@@ -1,3 +1,5 @@
+package lambda;
+
 import java.util.Comparator;
 
 class Student {

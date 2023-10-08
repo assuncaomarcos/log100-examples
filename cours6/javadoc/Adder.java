@@ -1,3 +1,5 @@
+package javadoc;
+
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -8,7 +10,7 @@ class MathOperation {
 
 /**
  * <h1>Calculer la somme de deux nombres</h1>
- * Le programme Adder implémente une application qui
+ * Le programme javadoc.Adder implémente une application qui
  * somme deux nombres donnés et imprime la sortie à l'écran.
  * Regardez {@link MathOperation} pour plus de détails
  * sur quelques opérations mathématiques.

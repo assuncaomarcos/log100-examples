@@ -1,4 +1,6 @@
-public class SleepExample {
+package threads;
+
+public class InterruptSleep {
 
     public static void main(String[] args) {
         // Classe anonyme
@@ -17,8 +19,8 @@ public class SleepExample {
                     try {
                         Thread.sleep(4000);
                     } catch (InterruptedException e) {
-                        System.out.println("Thread interrompu");
-                        e.printStackTrace();
+                        System.out.printf("Thread %d interrompu\n", Thread.currentThread().getId());
+                        break;
                     }
                 }
             }
@@ -26,5 +28,12 @@ public class SleepExample {
 
         Thread thread = new Thread(sleeping);
         thread.start();
+
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        thread.interrupt();
     }
 }

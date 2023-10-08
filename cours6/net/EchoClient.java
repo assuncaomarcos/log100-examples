@@ -1,3 +1,4 @@
+package net;
 /*
  * Copyright (c) 1995, 2013, Oracle and/or its affiliates. All rights reserved.
  *
@@ -39,7 +40,7 @@ public class EchoClient {
     public static void main(String[] args) throws IOException {
 
         if (args.length != 2) {
-            System.err.println("Usage: java EchoClient <nom du serveur> <numéro de port>");
+            System.err.println("Usage: java net.EchoClient <nom du serveur> <numéro de port>");
             System.exit(1);
         }
 

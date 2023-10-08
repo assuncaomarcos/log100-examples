@@ -1,4 +1,5 @@
-import com.sun.net.httpserver.HttpHandler;
+package net;
+
 import com.sun.net.httpserver.HttpServer;
 
 import java.io.*;
@@ -8,7 +9,7 @@ public class StaticWebServer {
 
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.err.println("Usage : java StaticWebServer <numéro de port> <repertoire racine>");
+            System.err.println("Usage : java net.StaticWebServer <numéro de port> <repertoire racine>");
             System.exit(1);
         }
 

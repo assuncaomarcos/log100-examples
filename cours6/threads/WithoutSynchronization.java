@@ -1,3 +1,5 @@
+package threads;
+
 class Counter {
     private int c = 0;
 
